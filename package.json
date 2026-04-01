@@ -1,0 +1,26 @@
+{
+  "name": "kinegest",
+  "version": "1.0.0",
+  "description": "Gestion de Cabinet de Kinésithérapie",
+  "main": "main.js",
+  "author": "Mohammed Bahaj",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.kinegest.app",
+    "productName": "KinéGest",
+    "win": {
+      "target": "nsis"
+    },
+    "files": [
+      "**/*",
+      "!node_modules"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^35.2.1",
+    "electron-builder": "^25.1.8"
+  }
+}

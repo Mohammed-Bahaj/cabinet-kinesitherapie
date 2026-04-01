@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- ===== ENCODAGE ===== -->
+  <!-- UTF-8 bach les caractères français (é, è, ç) ybano mzyan -->
+  <meta charset="UTF-8" />
+
+  <!-- ===== TITRE ===== -->
+  <!-- L'isem li kayban f barre dyal fenêtre -->
+  <title>KinéGest</title>
+
+  <!-- ===== STYLES ===== -->
+  <!-- 
+    Ma kayn style.css hna hit kolchi dyal design 
+    kayn dakhel app.jsx (inline styles f React)
+    Ghir reset basique bach l'app takhod l'écran kaml
+  -->
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body, #root { height: 100%; width: 100%; }
+  </style>
+</head>
+<body>
+
+  <!-- ===== ROOT ===== -->
+  <!-- Hadi l'blasa fin React ghadi ybni l'app kaml -->
+  <div id="root"></div>
+
+  <!-- ===== REACT CDN ===== -->
+  <!-- 
+    L'9dim: react.development.js (kbir, fih warnings, l test)
+    L'jdid: react.production.min.js (sghir, rapide, l logiciel final)
+  -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+  <!-- ===== BABEL ===== -->
+  <!-- Kay7awel JSX (code dyal React) l JavaScript 3adi -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- ===== APP ===== -->
+  <!-- L'fichier principal dyal l'application dyalek -->
+  <!-- type="text/babel" = goul l Babel: 7awel had l'fichier 9bel ma tkhddmo -->
+  <script type="text/babel" src="app.jsx"></script>
+
+</body>
+</html>
